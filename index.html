@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JCI Baliwag</title>
 
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css"
@@ -20,7 +26,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-jci shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="JCI Baliwag" height="40">
@@ -29,14 +35,14 @@
         data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
           <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
           <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
           <li class="nav-item">
-            <a class="btn btn-primary ms-lg-3" href="#join">Join Us</a>
+            <a class="btn btn-accent ms-3" href="#join">Join Us</a>
           </li>
         </ul>
       </div>
@@ -44,8 +50,9 @@
   </nav>
 
   <!-- Hero Banner -->
-  <section class="hero d-flex align-items-center text-white text-center">
-    <div class="container">
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="overlay"></div>
+    <div class="container text-white">
       <h1 class="display-4 fw-bold">JCI Baliwag</h1>
       <p class="lead">Empowering Young Leaders in Our Community</p>
       <a href="#join" class="btn btn-lg btn-outline-light">Become a Member</a>
@@ -53,26 +60,21 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 text-center">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2>About Us</h2>
-          <p>We’re a non-profit organization dedicated to community development in Baliwag, Bulacan.</p>
-        </div>
-        <div class="col-md-6">
-          <img src="about.jpg" alt="About JCI Baliwag" class="img-fluid rounded">
-        </div>
-      </div>
+      <h2>About Us</h2>
+      <p class="mx-auto" style="max-width:600px;">
+        We’re a non-profit organization dedicated to community development in Baliwag, Bulacan.
+      </p>
+      <img src="about.jpg" alt="About JCI Baliwag" class="img-fluid rounded mt-4 mx-auto d-block" style="max-width:500px;">
     </div>
   </section>
 
   <!-- Members -->
-  <section id="members" class="py-5 bg-light">
+  <section id="members" class="py-5 bg-light text-center">
     <div class="container">
-      <h2 class="mb-4 text-center">Our Members</h2>
-      <div class="row g-4">
-        <!-- Member Card -->
+      <h2 class="mb-5">Our Members</h2>
+      <div class="row g-4 justify-content-center">
         <div class="col-sm-6 col-md-4">
           <div class="card h-100">
             <img src="member1.jpg" class="card-img-top" alt="Member Name">
@@ -82,30 +84,30 @@
             </div>
           </div>
         </div>
-        <!-- Repeat above block for each member -->
+        <!-- Repeat for each member -->
       </div>
     </div>
   </section>
 
   <!-- Events -->
-  <section id="events" class="py-5">
+  <section id="events" class="py-5 text-center">
     <div class="container">
-      <h2 class="mb-4 text-center">Upcoming Events</h2>
-      <ul class="list-group">
+      <h2 class="mb-5">Upcoming Events</h2>
+      <ul class="list-group w-75 mx-auto">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Event A
-          <span class="badge bg-primary rounded-pill">June 20, 2025</span>
+          <span class="badge bg-jci rounded-pill">June 20, 2025</span>
         </li>
-        <!-- Repeat for each event -->
+        <!-- Repeat -->
       </ul>
     </div>
   </section>
 
   <!-- News -->
-  <section id="news" class="py-5 bg-light">
+  <section id="news" class="py-5 bg-light text-center">
     <div class="container">
-      <h2 class="mb-4 text-center">Latest News</h2>
-      <div class="row g-4">
+      <h2 class="mb-5">Latest News</h2>
+      <div class="row g-4 justify-content-center">
         <div class="col-md-4">
           <div class="card h-100">
             <div class="card-body">
@@ -115,7 +117,7 @@
             </div>
           </div>
         </div>
-        <!-- Repeat for each news item -->
+        <!-- Repeat -->
       </div>
     </div>
   </section>
@@ -125,16 +127,16 @@
     <div class="container">
       <h2>Join Us</h2>
       <p>Be part of our mission to create positive change.</p>
-      <a href="mailto:contact@jcibaliwag.online" class="btn btn-primary btn-lg">Contact Us</a>
+      <a href="mailto:contact@jcibaliwag.online" class="btn btn-accent btn-lg">Contact Us</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark text-white text-center">
+  <footer class="py-4 bg-jci text-white text-center">
     <div class="container">
-      <p class="mb-0">&copy; 2025 JCI Baliwag. All Rights Reserved.</p>
+      <p class="mb-1">&copy; 2025 JCI Baliwag. All Rights Reserved.</p>
       <p class="mb-0">
-        Contact: <a href="mailto:contact@jcibaliwag.online" class="text-white">contact@jcibaliwag.online</a>
+        Contact: <a href="mailto:contact@jcibaliwag.online" class="text-white text-decoration-underline">contact@jcibaliwag.online</a>
       </p>
     </div>
   </footer>

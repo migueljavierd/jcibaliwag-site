@@ -1,13 +1,40 @@
 /* styles.css */
 
-/* Hero banner */
-.hero {
-  height: 60vh;
-  background: url('hero.jpg') center/cover no-repeat;
+/* Global font */
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Section headings underline */
+/* JCI colors */
+.bg-jci    { background-color: #0b3d91 !important; }
+.bg-accent, .btn-accent, .badge.bg-accent {
+  background-color: #e63946 !important;
+  border-color: #e63946 !important;
+}
+a.btn-accent { color: #fff !important; }
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Headings */
 h2 {
+  font-weight: 600;
   position: relative;
   display: inline-block;
   padding-bottom: 0.5rem;
@@ -15,11 +42,12 @@ h2 {
 h2::after {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 60px;
   height: 4px;
-  background: #004080;
+  background: #e63946;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Card images */
@@ -28,7 +56,15 @@ h2::after {
   object-fit: cover;
 }
 
+/* Center list-group in Events */
+#events .list-group {
+  border: none;
+}
+
 /* Footer links */
 footer a {
   text-decoration: underline;
 }
+
+/* Ensure all text is centered where appropriate */
+.text-center { text-align: center !important; }
