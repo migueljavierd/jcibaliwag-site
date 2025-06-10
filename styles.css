@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Hero banner */
+.hero {
+  height: 60vh;
+  background: url('hero.jpg') center/cover no-repeat;
+}
+
+/* Section headings underline */
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: #004080;
+  bottom: 0;
+  left: 0;
+}
+
+/* Card images */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Footer links */
+footer a {
+  text-decoration: underline;
+}
